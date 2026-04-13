@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đang chuyển hướng...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    .loader {
+      margin-top: 15px;
+      border: 4px solid rgba(255,255,255,0.3);
+      border-top: 4px solid white;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      animation: spin 1s linear infinite;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- THAY LOGO Ở ĐÂY -->
+    <img src=".\logo.jpg" alt="Logo">
+    <h1>Tọa đàm "Nợ xấu trong bối cảnh mới"</h1>
+    <h2>Đang mở tài liệu...</h2>
+    <p>Vui lòng chờ trong giây lát</p>
+
+    <div class="loader"></div>
+  </div>
+
+  <script>
+    // THAY LINK Ở ĐÂY
+    setTimeout(function() {
+      window.location.href = "https://drive.google.com/drive/mobile/folders/1u6dVTIUVcxpaw5X2vbqJDmjQY_iBYLJT?hl=vi&zarsrc=1303&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo";
+    }, 3000);
+  </script>
+
+</body>
+</html>
